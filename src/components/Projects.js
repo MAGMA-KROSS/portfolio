@@ -41,7 +41,7 @@ const projects = [
     name: "Netflix Homepage Clone",
     description: "A UI clone of the Netflix homepage created to practice advanced CSS.",
     tech: ["HTML", "CSS"],
-    highlight: "Solidified core CSS and responsive layout skills through practice and This was my first project, completed on the 7th day of my web development journey, and I&apos;m really proud of it.",
+    highlight: "Solidified core CSS and responsive layout skills through practice and This was my first project, completed on the 7th day of my web development journey, and I’m really proud of it.",
     githubUrl: "https://github.com/MAGMA-KROSS/Web-Development/tree/main/Netflix%20clone",
     liveUrl: "http://web-development-ausj.vercel.app/",
     imageUrl: "/netflix.png",
