@@ -55,7 +55,7 @@ const AboutPage = () => {
           className="text-4xl md:text-5xl font-bold tracking-tight text-white mb-6"
           variants={itemVariants}
         >
-          Hey, I’m Abi 👋
+          Hey, I&apos;m Abi 👋
         </motion.h1>
 
    

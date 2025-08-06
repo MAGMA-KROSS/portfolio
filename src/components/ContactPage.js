@@ -78,10 +78,10 @@ const ContactPage = () => {
           variants={containerVariants}
         >
           <motion.h1 variants={itemVariants} className="text-4xl md:text-5xl font-bold tracking-tight mb-4">
-            Let’s Connect
+            Let&apos;s Connect
           </motion.h1>
           <motion.p variants={itemVariants} className="text-lg text-gray-300 max-w-2xl mx-auto">
-            Have a project idea, opportunity, or just want to say hi? I’d love to hear from you!
+            Have a project idea, opportunity, or just want to say hi? I&apos;d love to hear from you!
           </motion.p>
         </motion.div>
 

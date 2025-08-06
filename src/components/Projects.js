@@ -41,7 +41,7 @@ const projects = [
     name: "Netflix Homepage Clone",
     description: "A UI clone of the Netflix homepage created to practice advanced CSS.",
     tech: ["HTML", "CSS"],
-    highlight: "Solidified core CSS and responsive layout skills through practice and This was my first project, completed on the 7th day of my web development journey, and I’m really proud of it.",
+    highlight: "Solidified core CSS and responsive layout skills through practice and This was my first project, completed on the 7th day of my web development journey, and I&apos;m really proud of it.",
     githubUrl: "https://github.com/MAGMA-KROSS/Web-Development/tree/main/Netflix%20clone",
     liveUrl: "http://web-development-ausj.vercel.app/",
     imageUrl: "/netflix.png",
@@ -96,7 +96,7 @@ const ProjectCard = ({ project }) => {
           <h3 className="text-xl font-bold text-white mb-2">{project.name}</h3>
           <p className="text-gray-300 text-sm mb-4">{project.description}</p>
 
-          <h4 className="text-sm font-semibold text-white mb-2">Why it's cool:</h4>
+          <h4 className="text-sm font-semibold text-white mb-2">Why it&apos;s cool:</h4>
           <p className="text-cyan-400 text-sm mb-4">{project.highlight}</p>
 
           <h4 className="text-sm font-semibold text-white mb-3">Tech Used:</h4>
