@@ -61,7 +61,7 @@ const AboutPage = () => {
    
         <motion.div variants={itemVariants} className="space-y-4 text-lg text-gray-300 leading-relaxed">
           <p>
-            I'm a second-year BTech student with a love for building clean, modern web experiences.
+            I&apos;m a second-year BTech student with a love for building clean, modern web experiences.
           </p>
           <p>
             My journey spans from developing dynamic UIs to exploring the world of data science and content creation.
@@ -74,7 +74,7 @@ const AboutPage = () => {
         >
           <li className="flex items-start gap-3">
             <span className="mt-1"><YouTubeIcon /></span>
-            <span>I'm also a YouTube content creator, sharing insights on tech and gaming edits.</span>
+            <span>I&apos;m also a YouTube content creator, sharing insights on tech and gaming edits.</span>
           </li>
           <li className="flex items-start gap-3">
             <span className="mt-1"><FitnessIcon /></span>

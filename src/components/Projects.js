@@ -1,9 +1,12 @@
 
-'use client'; 
+'use client';
 
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import Link from 'next/link';
+import { useState } from 'react';
+import Image from 'next/image';
 
 
 const projects = [
@@ -63,51 +66,74 @@ const cardVariants = {
   },
 };
 
+const ProjectCard = ({ project }) => {
+  const [imgSrc, setImgSrc] = useState(project.imageUrl);
 
-const ProjectCard = ({ project }) => (
-  <motion.article
-    variants={cardVariants}
-    className="bg-gray-800/50 backdrop-blur-sm rounded-xl overflow-hidden shadow-lg hover:shadow-cyan-500/20 flex flex-col h-full transition-all duration-300 hover:scale-[1.02]"
-  >
-
-    <div className="w-full h-48 overflow-hidden">
-        <img 
-            src={project.imageUrl} 
-            alt={`Screenshot of ${project.name}`}
-            className="w-full h-full object-cover"
-            onError={(e) => { e.currentTarget.src = 'https://placehold.co/600x400/ef4444/ffffff?text=Image+Failed'; }}
+  return (
+    <motion.article
+      variants={cardVariants}
+      className="bg-gray-800/50 backdrop-blur-sm rounded-xl overflow-hidden shadow-lg hover:shadow-cyan-500/20 flex flex-col h-full transition-all duration-300 hover:scale-[1.02]"
+    >
+      <div className="w-full h-48 overflow-hidden">
+        <Image
+          src={imgSrc}
+          alt={`Screenshot of ${project.name}`}
+          width={600}
+          height={400}
+          unoptimized // ✅ skips Next.js optimization (fixes SVG error)
+          className="w-full h-full object-cover"
+          onError={() =>
+            setImgSrc(
+              "https://placehold.co/600x400/ef4444/ffffff?text=Image+Failed"
+            )
+          }
         />
-    </div>
 
-    <div className="p-6 flex-grow flex flex-col">
-      <div className="flex-grow">
-        <h3 className="text-xl font-bold text-white mb-2">{project.name}</h3>
-        <p className="text-gray-300 text-sm mb-4">{project.description}</p>
-        
-        <h4 className="text-sm font-semibold text-white mb-2">Why it's cool:</h4>
-        <p className="text-cyan-400 text-sm mb-4">{project.highlight}</p>
-        
-        <h4 className="text-sm font-semibold text-white mb-3">Tech Used:</h4>
-        <div className="flex flex-wrap gap-2 mb-4">
-          {project.tech.map((tech, index) => (
-            <span key={index} className="bg-gray-700 text-gray-200 text-xs font-medium px-3 py-1 rounded-full">
-              {tech}
-            </span>
-          ))}
+      </div>
+
+      <div className="p-6 flex-grow flex flex-col">
+        <div className="flex-grow">
+          <h3 className="text-xl font-bold text-white mb-2">{project.name}</h3>
+          <p className="text-gray-300 text-sm mb-4">{project.description}</p>
+
+          <h4 className="text-sm font-semibold text-white mb-2">Why it's cool:</h4>
+          <p className="text-cyan-400 text-sm mb-4">{project.highlight}</p>
+
+          <h4 className="text-sm font-semibold text-white mb-3">Tech Used:</h4>
+          <div className="flex flex-wrap gap-2 mb-4">
+            {project.tech.map((tech, index) => (
+              <span
+                key={index}
+                className="bg-gray-700 text-gray-200 text-xs font-medium px-3 py-1 rounded-full"
+              >
+                {tech}
+              </span>
+            ))}
+          </div>
         </div>
       </div>
-    </div>
-    
-    <div className="bg-gray-900/60 mt-auto p-4 flex justify-end gap-4">
-      <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="px-4 py-2 text-sm font-semibold text-white bg-gray-700 rounded-md hover:bg-gray-600 transition-colors">
-        GitHub
-      </a>
-      <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="px-4 py-2 text-sm font-semibold text-white bg-cyan-600 rounded-md hover:bg-cyan-500 transition-colors">
-        Live Demo
-      </a>
-    </div>
-  </motion.article>
-);
+
+      <div className="bg-gray-900/60 mt-auto p-4 flex justify-end gap-4">
+        <Link
+          href={project.githubUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="px-4 py-2 text-sm font-semibold text-white bg-gray-700 rounded-md hover:bg-gray-600 transition-colors"
+        >
+          GitHub
+        </Link>
+        <Link
+          href={project.liveUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="px-4 py-2 text-sm font-semibold text-white bg-cyan-600 rounded-md hover:bg-cyan-500 transition-colors"
+        >
+          Live Demo
+        </Link>
+      </div>
+    </motion.article>
+  );
+};
 
 
 
@@ -120,14 +146,14 @@ const ProjectsPage = () => {
   return (
     <main id='Projects' className="w-full min-h-screen bg-transparent text-white py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-     
+
         <motion.h1
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, ease: 'easeOut' }}
           className="text-4xl md:text-5xl font-bold tracking-tight text-center mb-16"
         >
-          Projects I’m Proud Of
+          Projects I&apos;m Proud Of
         </motion.h1>
 
 

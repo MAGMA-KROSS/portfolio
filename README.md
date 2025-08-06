@@ -76,20 +76,8 @@ Visit **[http://localhost:3000](http://localhost:3000)** to view it in your brow
 
 **Kumar Abi**
 📍 Noida, UP, India
-📩 Email: `youremail@example.com`
+📩 Email: `abik4001@gmail.com`
 🔗 LinkedIn: [linkedin.com/in/abiikx](https://linkedin.com/in/abiikx)
 💻 GitHub: [github.com/MAGMA-KROSS](https://github.com/MAGMA-KROSS)
 
 ---
-
-## 📌 Project Link
-
-[GitHub Repository](https://github.com/your-username/your-portfolio-repo)
-
-```
-
----
-
-If you want, I can also **add badges, preview screenshots, and a polished banner** so your GitHub profile looks even more attractive to recruiters.  
-Do you want me to make that version?
-```

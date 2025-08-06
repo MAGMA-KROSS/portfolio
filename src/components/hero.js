@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Typewriter from 'typewriter-effect';
+import Link from 'next/link';
 
 
 const HeroSection = () => {
@@ -37,18 +38,18 @@ const HeroSection = () => {
 
         {/* Call-to-Action Buttons */}
         <div className="flex flex-col sm:flex-row gap-4">
-          <a
+          <Link
             href="#projects"
             className="px-8 py-3 bg-cyan-500 text-white font-semibold rounded-lg shadow-lg hover:bg-cyan-600 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:ring-opacity-75 transition-transform transform hover:scale-105"
           >
             View Projects
-          </a>
-          <a
+          </Link>
+          <Link
             href="#contact"
             className="px-8 py-3 bg-gray-700 text-white font-semibold rounded-lg shadow-lg hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-75 transition-transform transform hover:scale-105"
           >
             Hire Me
-          </a>
+          </Link>
         </div>
       </div>
     </section>
