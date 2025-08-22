@@ -26,7 +26,7 @@ const projects = [
     highlight: "Personal trainer experience without a subscription.",
     githubUrl: "https://github.com/MAGMA-KROSS/magmafitnessai",
     liveUrl: "https://magmafitnessai-pczr.vercel.app/",
-    imageUrl: "https://placehold.co/600x400/0f172a/c0ffee?text=AI+Fitness+Coach",
+    imageUrl: "/magmafitnessai.png",
   },
   
   {
