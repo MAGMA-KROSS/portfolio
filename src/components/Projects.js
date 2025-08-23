@@ -11,13 +11,13 @@ import Image from 'next/image';
 
 const projects = [
   {
-    name: "AI Resume Generator",
-    description: "Generates smart, ATS-friendly resumes using AI prompts.",
-    tech: ["Next.js", "OpenAI API", "Tailwind CSS"],
-    highlight: "Saves hours of manual editing and enhances resumes in seconds.",
-    githubUrl: "#", // Replace with your GitHub URL
-    liveUrl: "#",   // Replace with your Live Demo URL
-    imageUrl: "https://placehold.co/600x400/0f172a/c0ffee?text=AI+Resume+Generator",
+    name: "Magma Hacks",
+    description: "Magma Hacks is a platform for hackers, coders, and digital warriors to learn, build, and dominate the tech world.",
+    tech: ["Next.js", "ShadCN", "Tailwind CSS"],
+    highlight: "Blog, Tutorial, Tools, Resources present at one place",
+    githubUrl: "https://github.com/MAGMA-KROSS/magma-hacks", // Replace with your GitHub URL
+    liveUrl: "https://magma-hacks.vercel.app/",   // Replace with your Live Demo URL
+    imageUrl: "/MagmaHacks.png",
   },
   {
     name: "Magma Fitness AI",
@@ -37,6 +37,15 @@ const projects = [
     githubUrl: "https://github.com/MAGMA-KROSS/Web-Development/tree/main/Netflix%20clone",
     liveUrl: "http://web-development-ausj.vercel.app/",
     imageUrl: "/netflix.png",
+  },
+  {
+    name: "AI Resume Generator",
+    description: "Generates smart, ATS-friendly resumes using AI prompts.",
+    tech: ["Next.js", "OpenAI API", "Tailwind CSS"],
+    highlight: "Saves hours of manual editing and enhances resumes in seconds.",
+    githubUrl: "#", // Replace with your GitHub URL
+    liveUrl: "#",   // Replace with your Live Demo URL
+    imageUrl: "https://placehold.co/600x400/0f172a/c0ffee?text=AI+Resume+Generator",
   },
 ];
 
