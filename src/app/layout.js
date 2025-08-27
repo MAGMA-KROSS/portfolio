@@ -23,7 +23,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body       
+      <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased text-white`}
       >
         <div style={{ position: 'fixed', inset: 0, zIndex: -10 }}>
@@ -34,9 +34,9 @@ export default function RootLayout({ children }) {
         </div>
         <main>
           <Navbar />
-            {children}
-            <Footer/>
-          </main>
+          {children}
+          <Footer />
+        </main>
       </body>
     </html>
   );
