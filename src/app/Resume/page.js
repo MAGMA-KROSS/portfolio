@@ -46,39 +46,37 @@ const skills = {
 
 const projects = [
     {
+        name: "MagmaFitness AI (Personalized Workout Planner)",
+        tech: "Next.js, Tailwind CSS, MongoDB, Clerk, Gemini API",
+        description: [
+            "Developed a full-stack, AI-driven fitness platform for personalized workout plans using the Google Gemini API.",
+            "Implemented secure user authentication and management with Clerk.",
+            "Built a responsive UI with Next.js and Tailwind CSS, managing user data with MongoDB.",
+        ],
+    },
+    {
         name: "Buy Me a Chai (Full-Stack Donation Platform)",
         tech: "Next.js, Tailwind CSS, MongoDB, NextAuth.js, Razorpay API",
         description: [
-            "Developed a chai-themed donation platform with secure payments via Razorpay API.",
-            "Implemented user authentication and real-time transaction management.",
+            "Developed a full-stack donation platform with a seamless payment flow.",
+            "Integrated Razorpay API for secure, real-time payment processing.",
+            "Implemented robust user authentication and session management using NextAuth.js.",
         ],
     },
     {
         name: "Magma-Hacks Homepage (Modern Landing Page)",
         tech: "Next.js, shadcn/ui, Tailwind CSS",
         description: [
-            "Designed a responsive hackathon landing page using reusable shadcn/ui components.",
-        ],
-    },
-    {
-        name: "Magma Drive (Cloud Storage App)",
-        tech: "Node.js, Express.js, Supabase, HTML, CSS, JavaScript",
-        description: [
-            "Built a Google Drive-style storage app with file upload, authentication, and Supabase backend.",
-        ],
-    },
-    {
-        name: "X (Twitter) Clone",
-        tech: "HTML, Tailwind CSS, JavaScript",
-        description: [
-            "Created a responsive clone of Twitter's interface using Tailwind CSS.",
+            "Designed and built a visually striking, fully responsive homepage for the Magma-Hacks hackathon.",
+            "Leveraged shadcn/ui to construct a library of reusable and accessible UI components.",
         ],
     },
     {
         name: "Spotify Clone",
-        tech: "HTML, CSS, JavaScript",
+        tech: "HTML, CSS, Vanilla JavaScript",
         description: [
-            "Developed a functional Spotify clone with DOM-based music player controls.",
+            "Built a functional clone of the Spotify web player with a focus on core interactivity.",
+            "Implemented music player functionalities by directly manipulating the DOM with vanilla JavaScript.",
         ],
     },
 ];
