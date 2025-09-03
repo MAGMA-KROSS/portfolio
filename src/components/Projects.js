@@ -39,13 +39,13 @@ const projects = [
     imageUrl: "/netflix.png",
   },
   {
-    name: "AI Resume Generator",
-    description: "Generates smart, ATS-friendly resumes using AI prompts.",
-    tech: ["Next.js", "OpenAI API", "Tailwind CSS"],
+    name: "MagmaAI",
+    description: "Generates smart, ATS-friendly resumes and Optimize LinkedIn using AI.",
+    tech: ["Next.js", "Gemini API", "Tailwind CSS"],
     highlight: "Saves hours of manual editing and enhances resumes in seconds.",
-    githubUrl: "#", // Replace with your GitHub URL
-    liveUrl: "#",   // Replace with your Live Demo URL
-    imageUrl: "https://placehold.co/600x400/0f172a/c0ffee?text=AI+Resume+Generator",
+    githubUrl: "https://github.com/MAGMA-KROSS/MagmaAI",
+    liveUrl: "https://magma-ai-liard.vercel.app/",   
+    imageUrl: "/MagmaAI.png",
   },
 ];
 
