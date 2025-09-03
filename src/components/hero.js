@@ -45,7 +45,7 @@ const HeroSection = () => {
             View Projects
           </Link>
           <Link
-            href="#contact"
+            href="#Contact"
             className="px-8 py-3 bg-gray-700 text-white font-semibold rounded-lg shadow-lg hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-75 transition-transform transform hover:scale-105"
           >
             Hire Me
