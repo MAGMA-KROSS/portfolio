@@ -44,7 +44,7 @@ const projects = [
     tech: ["Next.js", "Gemini API", "Tailwind CSS"],
     highlight: "Saves hours of manual editing and enhances resumes in seconds.",
     githubUrl: "https://github.com/MAGMA-KROSS/MagmaAI",
-    liveUrl: "https://magma-ai-liard.vercel.app/",   
+    liveUrl: "https://magma-ai-virid.vercel.app/",   
     imageUrl: "/MagmaAI.png",
   },
 ];
