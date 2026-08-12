@@ -5,7 +5,7 @@ Welcome to the source code of my **personal portfolio website**!
 This project showcases my skills, projects, and journey as a **Web Developer** and **Data Science Enthusiast**.  
 Built with a **modern tech stack**, it’s fast, responsive, and visually engaging.
 
-**Live Demo:** [your-portfolio-url.com](your-portfolio-url.com)
+**Live Demo:** [kumarabiportfolio.vercel.app](kumarabiportfolio.vercel.app)
 
 ---
 
